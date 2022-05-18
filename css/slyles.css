@@ -244,6 +244,8 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
   }
 
   .modal{
@@ -255,7 +257,10 @@
     left: 536px;
     right: 536px;
     bottom: 222px;
+    border-radius: 4px;
     transform: translateX(50%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
   }
 
   .close-button{
@@ -268,9 +273,11 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
   }
 
-  .backdrop is-hidden{
+  .backdrop.is-hidden{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
